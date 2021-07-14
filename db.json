@@ -1,0 +1,95 @@
+
+{
+    "quotes": [
+        {
+            "id": 1,
+            "compliment": "9 out of 10 doctors say you are virtually wowzers"
+        },
+        {
+            "id": 2,
+            "compliment": "i can't believe you are purely irresistible"
+        },
+        {
+            "id": 3,
+            "compliment": "i've always thought you have completely marvellous forearms"
+        },
+        {
+            "id": 4,
+            "compliment": "i've always thought you are virtually angelic"
+        },
+        {
+            "id": 5,
+            "compliment": "people say you have oh-so wonderful thighs"
+        },
+        {
+            "id": 6,
+            "compliment": "people say you are decidedly awe-inspiring"
+        },
+        {
+            "id": 7,
+            "compliment": "i've always thought you are positively majestic"
+        },
+        {
+            "id": 8,
+            "compliment": "people say you are devilishly marvellous"
+        },
+        {
+            "id": 9,
+            "compliment": "i've heard you have practically supercalifragilisticexpialidocious skills"
+        },
+        {
+            "id": 10,
+            "compliment": "i must say: you are very phenomenal"
+        },
+        {
+            "id": 11,
+            "insult": "Do you have to leave so soon? I was just about to poison the tea. num131",
+            "number": 131
+        },
+        {
+            "id": 12,
+            "insult": "You're so ugly Hello Kitty said goodbye to you. num127",
+            "number": 127
+        },
+        {
+            "id": 13,
+            "insult": "Do you still love nature....despite what it did to you? num148",
+            "number": 148
+        },
+        {
+            "id": 14,
+            "insult": "The only thing that goes erect when I'm near you is my middle finger. num161",
+            "number": 161
+        },
+        {
+            "id": 15,
+            "insult": "I would ask how old you are, but I know you can't count that high. num137",
+            "number": 137
+        },
+        {
+            "id": 16,
+            "insult": "You're so fat you need cheat codes to play Wii Fit. num146",
+            "number": 146
+        },
+        {
+            "id": 17,
+            "insult": "When you were born, the police arrested your dad, the doctor slapped your mom, animal control euthanized your brother, and A&E made a documentary that saved your life. num141",
+            "number": 141
+        },
+        {
+            "id": 18, 
+            "insult": "Your family tree is a cactus, because everybody on it is a prick. num126",
+            "number": 126
+        },
+        {
+            "id": 19,
+            "insult": "You must be the arithmetic man; you add trouble, subtract pleasure, divide attention, and multiply ignorance. num144",
+            "number": 144
+        },
+        {
+            "id": 20,
+            "insult": "You must have been born on a highway, because that's where most accidents happen. num125",
+            "number": 125
+        }
+    ]
+}
