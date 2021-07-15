@@ -1,4 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {comData()}) 
+document.addEventListener('DOMContentLoaded', () => {
+    comData()
+    comBtn()
+    insData()
+}) 
+//Comliment Section....
 const comData =() => {
     fetch('https://complimentr.com/api')
         .then(response => response.json())
@@ -11,14 +16,26 @@ const compliment = (data) => {
     newCom.innerHTML = com[0]
     console.log(com[0])
 }
+const comBtn = () => {
+    let button = document.querySelector('.goodBtn')
+     button.addEventListener('click', (e)=>{
+        e.preventDefault()
+        comData()
+     })
+}
+//.......
 
+//Insult Section....
+const insData =() => {
+    fetch('https://evilinsult.com/generate_insult.php?lang=en&type=json',{mode: 'no-cors'})
+        .then(response => response.json())
+        .then(insultData => insult(insultData))
+        .catch(error => console.log("Error: ", error))
+}
+const insult = (insultData) => {
+    console.log(insultData)
+}
 
-// const insData =() => {
-//     fetch('https://evilinsult.com/generate_insult.php?lang=en&type=json')
-//         .then(response => response.json())
-//         .then(data => insBtn(data))
-//         .catch(error => console.log("Error: ", error))
-// }
 // const insBtn = (data) => {
 //    let button = document.querySelector('.badBtn')
 //     button.addEventListener('click', (e)=>{
@@ -26,15 +43,4 @@ const compliment = (data) => {
 //        renderData(data)
 //     } )
 // }
-// const comBtn = (data) => {
-//     let button = document.querySelector('.goodBtn')
-//      button.addEventListener('click', (e)=>{
-//         e.preventDefault()
-//         renderData(data)
-//      })
-// }
-// const renderData = (data) => {
-//     for(sentence of data){
-//         console.log(data)
-//     }
-// }
+
