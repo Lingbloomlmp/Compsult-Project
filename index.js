@@ -13,10 +13,10 @@
     }
     const compliment = (data) => {
         com = Object.values(data)
-        console.log(com)
+        //console.log(com)
         newCom.innerHTML = com[0]
         statmentPlaceholder = com[0]
-        console.log(com[0])
+        //console.log(com[0])
     }
     const comBtn = () => {
         let button = document.querySelector('.goodBtn')
@@ -30,23 +30,26 @@
     
     //Insult Section....
     const insData =() => {
-            fetch('https://yomomma-api.herokuapp.com/jokes', {mode:'no-cors'})
-                .then(response => console.log(response))
-                // .then(data => console.log(data))
+            fetch('https://official-joke-api.appspot.com/random_joke')
+                .then(response => response.json())
+                .then(data => insult(data))
                 .catch(error => console.log("Error: ", error)) 
         }
-        // const insult = (insultData) => {
-            //     ins = Object.values(insultData) 
-            //     let newIns = document.querySelector('.Statments')
-            //     newIns.innerHTML = ins[0]
-            //     console.log(ins[0])
-            // }
-            const insBtn = () => {
-                    let badBtn =document.querySelector('.badBtn')
-                    badBtn.addEventListener('click', ()=>{
-                            insData()
-                        })
-                    }
+    const insult = (insultData) => {
+        jokeObj = Object.values(insultData) 
+        let newIns = document.querySelector('.Statments')
+        let joke = jokeObj[2]
+        let punchLine = jokeObj[3]
+        newIns.innerHTML = `${joke}... ${punchLine}`
+        statmentPlaceholder = newIns.textContent
+        // console.log(ins[2,3])
+    }
+    const insBtn = () => {
+        let badBtn =document.querySelector('.badBtn')
+        badBtn.addEventListener('click', ()=>{
+            insData()
+        })
+    }
                     //.......
                     //Rate Section....
                     const statmentForm = document.querySelector('#form')
