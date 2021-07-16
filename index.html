@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
+        <script defer src='index.js'></script>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./style.css">
     <style>
       h1 {
           color: rgb(11, 11, 179);
           font-family: verdana;
-          font-size: 300%;
+          font-size: 200%;
       }
-      p {
-          color: rgb(175, 20, 20);
-          font-family: courier;
-          font-size: 160%;
+      li {
+          color: rgb(8, 78, 35);
+          font-family: verdana;
+          font-size: 200%;
       }
     </style>
 </head>
 <body>
+    <form id="form" name="Form">
+       <input type="radio" id="star1" name="rate" value="1" checked/>
+       <input type="radio" id="star2" name="rate" value="2" />
+       <input type="radio" id="star3" name="rate" value="3" />
+       <input type="radio" id="star4" name="rate" value="4" />
+       <input type="radio" id="star5" name="rate" value="5" />
+       <input type="submit" id="submitBtn" name="Submit" />
+    </form>
     <button class='goodBtn'> Compliment </button>
     <button class="badBtn"> Insult </button>
-    <script src='index.js'></script>
-    <h1>This Is Our Project</h1>
-    <p>This App Will Make You Cry</p>
-    <div class='box'>
-        <!-- <img src='img/cork-board.png' alt='what happened?' > -->
+    <h1 class = 'Statments'></h1>
+    <div class ='postedStatments'>
     </div>
 </body>
 </html>
