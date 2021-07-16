@@ -56,7 +56,7 @@
                     const renderLi =(statmentData, rateValue) => {
                         let postBoard = document.querySelector('.postedStatments')
                         let li = document.createElement('li')
-                        li.textContent = `${statmentData}:  Rateing:${rateValue}` 
+                        li.textContent = `${statmentData}:  Rating:${rateValue}` 
                         console.log(statmentData)
                         postBoard.append(li) 
                     }
